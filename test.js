@@ -71,4 +71,12 @@ describe('deepUnref', () => {
     expect(deepUnref(['abc', 'def', 'ghi']))
       .toStrictEqual(['abc', 'def', 'ghi']);
   });
+
+  it('should not change original object', () => {
+    const original = { abc: ref('def') };
+    const unreffed = deepUnref(original);
+
+    expect(unreffed).toStrictEqual({ abc: 'def' });
+    expect(original).toStrictEqual({ abc: ref('def') });
+  });
 });
