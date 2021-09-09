@@ -1,0 +1,19 @@
+{
+  "name": "vue-deepunref",
+  "version": "1.0.0",
+  "description": "Deeply un-reference Vue objects.",
+  "main": "index.js",
+  "repository": "git@github.com:DanHulton/vue-deepunref.git",
+  "author": "Dan Hulton <dan@danhulton.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "vue": "^3"
+  },
+  "devDependencies": {
+    "jest": "^27.1.1"
+  },
+  "scripts": {
+    "test": "npx jest"
+  }
+}
