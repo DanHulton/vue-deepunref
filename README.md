@@ -19,3 +19,6 @@ const form = {
 
 saveRest({ ...deepUnref(form) });
 ```
+
+## Notes
+`deepUnref` doesn't work with `Set` and `Map` objects

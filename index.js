@@ -47,15 +47,7 @@ const smartUnref = (val) => {
  *
  * @return {Array}
  */
-const unrefArray = (arr) => {
-  const unreffed = [];
-
-  arr.forEach((val) => {
-    unreffed.push(smartUnref(val));
-  });
-
-  return unreffed;
-};
+const unrefArray = (arr) => arr.map(smartUnref);
 
 /**
  * Unref an object, recursively.
